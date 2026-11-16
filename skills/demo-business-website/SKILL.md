@@ -30,6 +30,10 @@ Steps 4 and 5 can run in parallel. Give each agent the project folder path and t
 
 If agents aren't available in this environment, do every step yourself in the same order, reading each agent's file in this plugin's `agents/` folder as the checklist for that step.
 
+**Quality bar:** `references/quality-bar.md` describes what an approved demo looked like (page count, section depth, content specifics, heroes, motion, photos, mobile) and the 10-criterion rubric the tester scores. Give it to the designer, developer, animator and tester. Every criterion must score 4 or 5 before delivery.
+
+**Proven code:** build on the bundled `assets/motion.js` + `assets/motion.css` (reveals with a no-stuck-content fallback, word-by-word headlines, stagger, counters, parallax, tilt, magnetic buttons, progress bar, mobile menu, demo forms) and `assets/ambient.js` (industry 3D layer), instead of rewriting them. Style them to the new design; don't change how they work unless there's a bug.
+
 The sections below are the shared rules every agent follows.
 
 ## 1. Confirm direction before building

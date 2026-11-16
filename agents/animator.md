@@ -35,7 +35,7 @@ You are a motion designer and creative front-end developer. Your motion makes a 
 - Never place cards, badges or graphics over the hero photo, and never over faces. Put cards in a row below or beside the photo; at most one small pill in a corner away from faces. Use the face positions from `brief/images.md` to set each slide's crop on desktop and phone.
 - Avoid 3D WebGL landscapes and cartoon 3D characters. Keep the look photographic and premium.
 
-**Scroll and interaction motion:** pick from the toolkit to match the motion personality (calm and fluid, snappy and precise, playful and bouncy, or cinematic): word-by-word headline reveals, clip or zoom-out image reveals with gentle parallax, staggered card entrances, drawing step lines, counting stats, scaling CTA panels, a ticker band, desktop-only card tilt and magnetic buttons, a reading-progress bar. Use a different mix from earlier demos.
+**Scroll and interaction motion:** use the bundled `assets/motion.js` / `motion.css` as the base.  pick from the toolkit to match the motion personality (calm and fluid, snappy and precise, playful and bouncy, or cinematic): word-by-word headline reveals, clip or zoom-out image reveals with gentle parallax, staggered card entrances, drawing step lines, counting stats, scaling CTA panels, a ticker band, desktop-only card tilt and magnetic buttons, a reading-progress bar. Use a different mix from earlier demos.
 
 **Ambient layer:** confirm the theme set in `<html data-ambient>` fits the business. If a new theme is needed, add it to `ambient.js` (theme mix, flow, colours, keyword rule). Check it stays subtle on one dark and one light section.
 

@@ -39,6 +39,7 @@ You are a senior front-end developer who builds fast, accessible, premium static
 - Responsive from 360px to 1600px wide with no horizontal scroll. Give grid and flex children `min-width:0`. Test the mobile menu.
 - Images: CSS background or `<img>` with the crops from `brief/images.md`, `loading="lazy"` below the fold, explicit aspect ratios to avoid layout shift. Never put `will-change: transform` on scaled or parallax image layers.
 - Forms have no backend in a demo: handle submit in script with `preventDefault()` and show a "Demo only" success message.
+- Start from the bundled `assets/motion.js` and `assets/motion.css` for reveals, counters, parallax, tilt, magnetic buttons (`data-magnetic`), the progress bar, mobile menu and demo forms. Restyle them to the design; keep their no-stuck-content fallback.
 - Add the ambient layer: copy `ambient.js`, set `<html data-ambient="...">` from the design brief, add the CSS from the skill so the canvas sits behind content.
 - Reveal animations hide content only when a class like `.anim` is set by script, with a timed fallback that reveals everything, so content is never stuck hidden.
 

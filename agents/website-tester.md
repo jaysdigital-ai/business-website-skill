@@ -45,4 +45,6 @@ If Playwright is missing, install it (`pip install playwright` then `python -m p
 - All business details are fictional and testimonials are labelled as samples.
 - The design is not a repeat: compare the fingerprint in `brief/design.md` with `design-log.md`.
 
-**Report format:** a verdict (PASS or FAIL), then a numbered list of issues, each with: page, width, severity (blocker, major, minor), what's wrong, where (selector or screenshot), and the expected result. Assign each issue to an owner: web-developer, animator, graphic-artist, copywriter or seo-specialist. A site with any blocker or major issue is a FAIL.
+**Score against the quality bar:** read `references/quality-bar.md` in the skill folder and score all 10 criteria from 1 to 5 with one line of evidence each. Any criterion below 4 is a major issue.
+
+**Report format:** a verdict (PASS or FAIL), then a numbered list of issues, each with: page, width, severity (blocker, major, minor), what's wrong, where (selector or screenshot), and the expected result. Assign each issue to an owner: web-developer, animator, graphic-artist, copywriter or seo-specialist. A site with any blocker or major issue, or any rubric score below 4, is a FAIL. Put the rubric table at the top of the report.

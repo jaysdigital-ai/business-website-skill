@@ -16,7 +16,7 @@ Made for web designers and agencies who pitch websites to local businesses (clin
 | **Animator** | Creates a different animated hero for every page, the scroll motion and the industry-themed 3D layer |
 | **Website Tester** | Independently renders every page on desktop and phone, runs the QA script and sends issues back until the site passes |
 
-Each agent hands off a written brief to the next, and **no site is delivered until the tester passes it**. That hand-off and QA loop is what makes the results consistent. In environments without agents, Claude runs the same steps itself, using each agent's file as the checklist.
+Each agent hands off a written brief to the next, and **no site is delivered until the tester passes it**, including a 10-point quality rubric (premium feel, uniqueness, completeness, content depth, photography, heroes and motion, typography, mobile, accessibility, SEO) where every score must be 4/5 or higher. That hand-off and QA loop is what makes the results consistent. In environments without agents, Claude runs the same steps itself, using each agent's file as the checklist.
 
 ## What it does
 
@@ -81,7 +81,11 @@ skills/
 └── demo-business-website/
     ├── SKILL.md           # the workflow and shared rules
     ├── assets/
-    │   └── ambient.js     # themed 3D particle layer (no dependencies)
+    │   ├── ambient.js     # themed 3D particle layer (no dependencies)
+    │   ├── motion.js      # proven reveal and interaction kit
+    │   └── motion.css
+    ├── references/
+    │   └── quality-bar.md # the standard and scoring rubric
     └── scripts/
         └── qa_check.py    # automated QA (needs Playwright)
 ```
