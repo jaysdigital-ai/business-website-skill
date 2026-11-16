@@ -84,7 +84,7 @@ A toolkit to pick from, matched to the motion personality chosen in section 1b. 
 
 Every demo gets an ambient 3D particle layer behind the content of each hero, each CTA panel and the footer. **The theme is picked from the business, never fixed to one effect.**
 
-A ready-made engine ships with this skill: copy `assets/ambient.js` into the site, load it at the end of `<body>`, and set `<html data-ambient="...">` from the industry. If the attribute is left off, the script picks a theme from keywords in the page title and meta description. It attaches itself to elements with the classes `hero`, `cta-panel` and `footer`, and uses the dark palette on sections that also have `dark`, `deep`, `cta-panel` or `footer`.
+A ready-made engine ships with this skill: copy `assets/ambient.js` from this skill's folder (`${CLAUDE_PLUGIN_ROOT}/skills/demo-business-website/assets/ambient.js` when installed as a plugin) into the site, load it at the end of `<body>`, and set `<html data-ambient="...">` from the industry. If the attribute is left off, the script picks a theme from keywords in the page title and meta description. It attaches itself to elements with the classes `hero`, `cta-panel` and `footer`, and uses the dark palette on sections that also have `dark`, `deep`, `cta-panel` or `footer`.
 
 | Theme | Industries | Particles and motion |
 |---|---|---|

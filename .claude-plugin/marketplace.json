@@ -1,0 +1,19 @@
+{
+  "name": "digital-agila",
+  "owner": {
+    "name": "The Digital Agila",
+    "url": "https://thedigitalagila.com"
+  },
+  "metadata": {
+    "description": "Claude plugins by The Digital Agila"
+  },
+  "plugins": [
+    {
+      "name": "demo-business-website",
+      "source": "./",
+      "description": "Premium, multi-page demo business websites with unique designs, real photos, animated heroes and an industry-themed 3D effect.",
+      "version": "1.0.0",
+      "category": "design"
+    }
+  ]
+}
