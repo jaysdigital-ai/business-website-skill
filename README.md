@@ -31,7 +31,7 @@ On older versions of Claude Code, add the marketplace first:
 
 ### Claude apps (claude.ai and the desktop app)
 
-1. Download **`demo-business-website.plugin`** from the [latest release](https://github.com/jaysdigital-ai/business-website-skill/releases/latest).
+1. Download **[`demo-business-website.plugin`](https://github.com/jaysdigital-ai/business-website-skill/raw/main/dist/demo-business-website.plugin)** (it's in the `dist` folder of this repo).
 2. Upload it in Claude's plugin settings, or drop it into a chat and accept it from the preview card. (Plugin uploads must be available on your plan or enabled by your organisation.)
 
 ### Just the skill
