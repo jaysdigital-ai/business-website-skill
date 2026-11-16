@@ -8,6 +8,30 @@ license: MIT
 
 The goal is a site a prospect (a clinic or small business owner) sees and immediately thinks "that's what my business should look like". It must feel premium and real, not templated or AI-generated.
 
+## 0. Work as a studio team
+
+This plugin ships seven specialist agents. Run the build as a studio pipeline, with the lead (you) talking to the user and the agents doing the specialist work. Each agent writes its output to a `brief/` folder in the project, so every step has a written hand-off the next one builds on.
+
+| Step | Agent | Output |
+|---|---|---|
+| 1 | (lead) confirm business, name, look and photos with the user (section 1) | agreed direction |
+| 2 | `ui-ux-designer` | `brief/design.md`: personality, unique 10-axis fingerprint, tokens, sitemap, sections per page, hero concepts, image slots, ambient theme |
+| 3 | (lead) show the direction and hero options to the user and get a yes | approval |
+| 4 | `copywriter`, then `seo-specialist` (plan mode) | `brief/copy.md`, `brief/seo.md` |
+| 5 | `graphic-artist` | logo, icons, `img/` at full resolution, `brief/images.md` with crops and face positions |
+| 6 | `web-developer` | the full multi-page site |
+| 7 | `animator` | page heroes, scroll motion, ambient 3D layer |
+| 8 | `seo-specialist` (audit mode) | fixes and an SEO pass/fail list |
+| 9 | `website-tester` | PASS/FAIL report with screenshots and owners for each issue |
+| 10 | owners fix, then `website-tester` again | repeat until PASS (at most 3 rounds, then report what's left) |
+| 11 | (lead) deliver and log the design (section 8) | site, zip, design log entry |
+
+Steps 4 and 5 can run in parallel. Give each agent the project folder path and the business details, because agents don't see this conversation. Never deliver a site the tester hasn't passed.
+
+If agents aren't available in this environment, do every step yourself in the same order, reading each agent's file in this plugin's `agents/` folder as the checklist for that step.
+
+The sections below are the shared rules every agent follows.
+
 ## 1. Confirm direction before building
 
 - Settle the industry, the fictional business name and the general look in one short exchange.
@@ -114,6 +138,7 @@ To add a new theme, add an entry to `THEMES` (particle mix, flow direction, flip
 
 ## 7. Test before delivering
 
+- Run the bundled QA script: `python3 scripts/qa_check.py <site-folder>` (from this skill's folder). It renders every page at desktop and phone widths, scrolls through, and reports hidden content, horizontal overflow, script errors, broken links, missing alt text, low-resolution images, heading and meta problems and invalid JSON-LD, and saves screenshots. Mark intentionally hidden states outside the hero (e.g. inactive carousel slides) with `data-qa-ignore`.
 - Render every page in a headless browser at desktop and phone widths and look at the screenshots.
 - Scroll through each page and check that every revealed element ends up visible. This once caught a CSS specificity bug that hid all team photos and article images.
 - Check for console errors and for horizontal overflow on phones.

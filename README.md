@@ -1,8 +1,22 @@
 # Demo Business Website — a Claude plugin
 
-A Claude plugin that builds premium, multi-page demo websites for small businesses: the kind of site you can show a prospect so they think "that's what my business should look like".
+A studio team of seven AI agents that builds premium, multi-page demo websites for small businesses: the kind of site you can show a prospect so they think "that's what my business should look like".
 
 Made for web designers and agencies who pitch websites to local businesses (clinics, trades, salons, cafés and more).
+
+## The team
+
+| Agent | Role |
+|---|---|
+| **UI/UX Designer** | Turns the business into a unique design system, sitemap and hero concepts, and checks the design log so it never repeats an earlier demo |
+| **Copywriter** | Writes every page in the brand's voice, with realistic but fictional details and no AI-sounding filler |
+| **SEO Specialist** | Plans titles, meta descriptions, headings, local-business schema, alt text, sitemap.xml and robots.txt, then audits the built site |
+| **Graphic Artist** | Designs the logo, icons and social image, and prepares every photo at full resolution with the right crop |
+| **Web Developer** | Builds the fast, accessible, responsive multi-page site from the briefs |
+| **Animator** | Creates a different animated hero for every page, the scroll motion and the industry-themed 3D layer |
+| **Website Tester** | Independently renders every page on desktop and phone, runs the QA script and sends issues back until the site passes |
+
+Each agent hands off a written brief to the next, and **no site is delivered until the tester passes it**. That hand-off and QA loop is what makes the results consistent. In environments without agents, Claude runs the same steps itself, using each agent's file as the checklist.
 
 ## What it does
 
@@ -12,7 +26,8 @@ Made for web designers and agencies who pitch websites to local businesses (clin
 - **Animated heroes that fit the business.** A different hero on every page, with animated cards that never cover faces in the photos.
 - **Ambient 3D effect matched to the industry.** Frost for air conditioning, paw prints for vets, sparkles for dental, water drops for plumbing, leaves for landscaping and 8 more themes. A ready-made engine (`ambient.js`) is included.
 - **Safe demo details.** Fictional business names, people, emails and reserved fictional phone numbers, with testimonials labelled as samples.
-- **Tested before delivery.** Every page is checked at desktop and phone sizes for hidden content, overflow and errors.
+- **Local SEO built in.** Page titles, meta descriptions, LocalBusiness schema, FAQ schema, alt text, sitemap.xml and robots.txt.
+- **Tested before delivery.** A bundled QA script (`qa_check.py`) renders every page at desktop and phone sizes and reports hidden content, overflow, script errors, broken links, missing alt text, low-resolution images and SEO problems, with screenshots.
 
 ## Install
 
@@ -54,12 +69,24 @@ Claude will confirm the business, the look and the hero direction with you, then
 .claude-plugin/
 ├── plugin.json            # plugin manifest
 └── marketplace.json       # lets Claude Code install it from this repo
+agents/
+├── ui-ux-designer.md
+├── copywriter.md
+├── seo-specialist.md
+├── graphic-artist.md
+├── web-developer.md
+├── animator.md
+└── website-tester.md
 skills/
 └── demo-business-website/
-    ├── SKILL.md           # the instructions Claude follows
-    └── assets/
-        └── ambient.js     # themed 3D particle layer (no dependencies)
+    ├── SKILL.md           # the workflow and shared rules
+    ├── assets/
+    │   └── ambient.js     # themed 3D particle layer (no dependencies)
+    └── scripts/
+        └── qa_check.py    # automated QA (needs Playwright)
 ```
+
+The QA script needs Playwright: `pip install playwright && python -m playwright install chromium`.
 
 ## Notes
 

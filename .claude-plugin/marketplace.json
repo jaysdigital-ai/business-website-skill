@@ -11,8 +11,8 @@
     {
       "name": "demo-business-website",
       "source": "./",
-      "description": "Premium, multi-page demo business websites with unique designs, real photos, animated heroes and an industry-themed 3D effect.",
-      "version": "1.0.0",
+      "description": "A studio team of 7 AI agents that builds premium, multi-page demo business websites: unique designs, real photos, animated heroes, local SEO and independent QA.",
+      "version": "1.1.0",
       "category": "design"
     }
   ]

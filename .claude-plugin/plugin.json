@@ -1,7 +1,7 @@
 {
   "name": "demo-business-website",
-  "version": "1.0.0",
-  "description": "Builds premium, multi-page demo websites for small businesses to show prospects: a unique design per demo, real photos, animated heroes and an ambient 3D effect themed to the industry.",
+  "version": "1.1.0",
+  "description": "A studio team of 7 AI agents (UI/UX designer, copywriter, SEO specialist, graphic artist, web developer, animator, website tester) that builds premium, multi-page demo websites for small businesses, with a unique design per demo and an independent QA pass before delivery.",
   "author": {
     "name": "The Digital Agila",
     "url": "https://thedigitalagila.com"
@@ -9,5 +9,13 @@
   "homepage": "https://github.com/jaysdigital-ai/business-website-skill",
   "repository": "https://github.com/jaysdigital-ai/business-website-skill",
   "license": "MIT",
-  "keywords": ["website", "web design", "demo site", "small business", "landing page", "agency", "prospecting"]
+  "keywords": [
+    "website",
+    "web design",
+    "demo site",
+    "small business",
+    "landing page",
+    "agency",
+    "prospecting"
+  ]
 }
